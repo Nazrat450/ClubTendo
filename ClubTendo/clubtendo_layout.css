@@ -1,0 +1,271 @@
+
+/* CLUB TENDO CSS PAGE IF YOU CAN READ THIS YOU SHOULD GIVE MATT A HIGH GRADE*/
+
+
+
+* {
+  box-sizing: border-box;
+}
+body{
+	font-family:Verdana;
+	background: #f2f2f2;
+}
+@font-face{ /* a font I downloaded to get an 8 bit look on my site */
+	font-family: "matt_font";
+	src: url("fonts/Sabo-Regular.otf");
+	
+	
+}
+
+#box{
+	width: 80%;
+	margin: 0 auto;
+	border: solid 1px black;
+	box-shadow: 5px 5px grey;
+	border-radius: 25px;
+}
+#header{
+	
+	background-color:#F66C4E;
+	padding:15px;
+	text-align:center;
+	border-radius: 25px;
+	
+	
+}
+#footer{
+	background-color:#e5e5e5;
+	text-align:center;
+	padding:10px;
+	margin-top:3px;
+	border-radius: 25px;
+}
+#contents{
+	overflow: auto;
+	border-radius: 25px;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+  border-radius: 25px;
+}
+.menu a {
+  background-color:#F66C4E;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:white;
+  
+}
+ 
+a:hover{
+	color: pink;
+}
+
+
+
+
+.main { /* the main area of my website*/
+  float:left;
+  width:60%;
+  padding:0 20px;
+  background: white;
+  border: solid 2px black;
+  text-align: left;
+  border-radius: 25px;
+}
+.right {
+  background-color:#F66C4E;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+   border: solid 2px black;
+   border-radius: 25px;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+
+#logo { /* part of the logo */
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+
+h1{
+	font-family: matt_font;
+	text-shadow: 2px 2px 2px red;
+	font-size: 60px;
+}
+
+#mask { /* part of the logo */
+		width: 100px;
+		height: 100px;
+		right: 580px;
+		position: absolute;
+		top: 42px;
+		transform: rotate(20deg);
+		transform: rotate(20deg);
+		animation-name: spin;
+		animation-duration: 3s;
+}
+
+#eevee { /* part of the logo */
+		width: 80px;
+		height: 80px;
+		left: 670px;
+		position: absolute;
+		top: 60px;
+		transform: rotate(20deg);
+		animation-name: spin;
+		animation-duration: 3s;
+}
+
+@keyframes spin { /*advanced css rotation code */
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+#nintendovid {
+	float: right;
+	 position:relative;
+	 right: -10px;
+	 bottom: 30px
+}
+
+
+#welcome1 { /* the welcome message*/
+	text-align: left;
+	font-family: "Arial Black";
+	
+}
+
+h2{
+	font-family: matt_font;
+}
+
+p{
+	font-family: "Arial Black";
+	font-size: 15px;
+}
+
+
+form{
+	  border: solid 2px black;
+	  text-align: center;
+	  font-family: "Impact";
+	  background: #F66C4E
+}
+
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid Black;
+  border-top: 2px solid Black;
+  text-align: center;
+}
+
+#frontz{
+	width: 200px;
+	height: 280px;
+	float: right;
+	top: 100px;
+	position: relative;
+	right: 30px;
+	
+	
+	
+}
+
+#backz{
+	width: 410px;
+	height: 285px;
+	float: right;
+	top: 420px;
+	position: absolute;
+	right: 560px;
+	transition: width 1s;
+	opacity: 0;
+	
+	
+}
+
+#backz:hover{       /*Fades in the back of the game case cover */
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+
+
+}
+	 ol {
+  background: #F66C4E;
+  padding: 20px;
+  font-family: "Impact";
+  font-size: 20px;
+}
+
+ul {
+	background: #F66C4E;
+	padding: 20px;
+	font-family: "Impact";
+	font-size: 20px;
+}
+
+ol > li {
+  background: #ffe5e5;
+  padding: 5px;
+  margin-left: 35px;
+ 
+}
+
+ul > li {
+  background: #ffe5e5;
+  margin-left: 35px;
+  padding: 5px;
+  
+}
+
+#mariofront{
+	width: 200px;
+	height: 280px;
+	float: right;
+	top: 100px;
+	position: relative;
+	right: 30px;
+	
+}
+ 
+
+
+#photoShow{
+		width: 400px;
+		height: 400px;
+	}
+	#photoShow div{
+		position: absolute;
+		z-index: 0;
+
+	}
+	#photoShow div.previous{
+		z-index: 1;
+		}
+	#photoShow div.current{
+		z-index: 2;
+		}

@@ -1,0 +1,10 @@
+ADMIN login
+
+
+email: admin@gmail.com
+password: 1234
+
+
+USER LOGIN (restricted view)
+email: matthewryanhill95@gmail.com
+password: 1234
